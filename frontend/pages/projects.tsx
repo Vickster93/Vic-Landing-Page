@@ -16,7 +16,8 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/projects')
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`)
+
       .then(res => {
         setProjects(res.data);
         setLoading(false);
