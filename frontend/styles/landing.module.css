@@ -1,0 +1,26 @@
+.landingMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* Blue gradient */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.landingMain h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.landingMain p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
