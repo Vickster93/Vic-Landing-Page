@@ -1,0 +1,82 @@
+.landingMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* Blue gradient */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Heading */
+.landingMain h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.2s;
+}
+
+/* Paragraph */
+.landingMain p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.5s;
+}
+
+/* CTA Button */
+.cta-btn {
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  color: #1e3a8a;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s, color 0.2s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.8s;
+}
+
+.cta-btn:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 600px) {
+  .landingMain h1 {
+    font-size: 2rem;
+  }
+
+  .landingMain p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .cta-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
